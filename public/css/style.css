@@ -1,0 +1,155 @@
+/**
+ * CSS Customizado - Estacionamento v3.0
+ * Complementa Bootstrap 5.3
+ */
+
+:root {
+    --primary: #2563eb;
+    --secondary: #64748b;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --warning: #ca8a04;
+    --info: #0891b2;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Cards com gradiente */
+.card-gradient {
+    border: none;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.card-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-gradient-success {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.card-gradient-warning {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.card-gradient-info {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Botões grandes mobile-first */
+.btn-grande {
+    padding: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+.btn-grande:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Status badges */
+.badge-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.badge-aberto {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.badge-fechado {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.badge-cancelado {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+/* Inputs grandes para mobile */
+.form-control-lg, .form-select-lg {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+}
+
+/* Loading spinner custom */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Tabela responsiva melhorada */
+.table-responsive {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table-custom thead {
+    background-color: #f8fafc;
+}
+
+.table-custom tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* QR Code display */
+.qr-display {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px dashed #cbd5e1;
+    text-align: center;
+}
+
+/* Animações suaves */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Navbar blur effect */
+.navbar-blur {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.9) !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .btn-grande {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .card-stat h2 {
+        font-size: 1.5rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+}
