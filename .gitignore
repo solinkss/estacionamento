@@ -1,33 +1,4 @@
 ```
-# Dependencies
-vendor/
-
-# Logs
-*.log
-
-# Environment
-.env
-.env.local
-.env.*
-
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# PHP
-*.php~
-phpunit.xml
-composer.lock
-
-# Tests
-.tests/
-.phpunit.result.cache
-
-# Cache
-.cache/
-tmp/
+# Documentation
+MANUAL_USUARIO_COMPLETO.md
 ```
